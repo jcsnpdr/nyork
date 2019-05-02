@@ -1,0 +1,56 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+
+{
+	int a;
+	double w, l, x, cr, color;
+	
+	
+	cout << "enter the length of the deired frame: " << endl;
+	cin >> l;
+	cout << "enter the width of the deired frame: " << endl;
+	cin >> w;
+	cout << endl;
+
+	cout << "Please choose a number 1 or 2 for the type of frame" << endl;
+	cout << "1-regular" << endl;
+	cout << "2-fancy" << endl;
+	cin >> a;
+	cout << endl;
+
+	cout << "do you want to color the frame?" << endl;
+	cout << "1 for YES and 2 for NO" << endl;
+	cin >> color;
+	cout << endl;
+
+	cout << "how many crowns do you want?" << endl;
+	cin >> cr;
+	cout << endl;
+
+
+switch (a)
+{
+	case '1':
+		{
+			if (color=1)
+				cout << "total amount: " << ((l)* .15) + ((l)* .1) + ((l*w)* .02) + ((l*w)* .07) + (cr*.35) << endl;
+			else
+				cout << "total amount: " << ((l)* .15) + ((l*w)* .02) + ((l*w)* .07) + (cr*.35) << endl;
+		}
+	case '2':
+		{
+			if (color=1)
+				cout << "total amount: " << ((l)* .25) + ((l)* .1) + ((l*w)* .02) + ((l*w)* .07) + (cr*.35) << endl;
+			else
+				cout << "total amount: " << ((l)* .25) + ((l*w)* .02) + ((l*w)* .07) + (cr*.35) << endl;
+		}
+}
+
+
+-getch();
+return 0;
+}
